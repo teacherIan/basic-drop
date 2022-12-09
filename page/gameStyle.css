@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+
+    font-family: 'Grape Nuts', cursive;
+    font-weight: 900
+}
+
+.game-container {
+    position: relative;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.sapphireContainer {
+
+    border-right: 1px solid black
+}
+
+.rubyContainer {
+
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+
+}
+
+.amberContainer {
+
+
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.pearlContainer {
+
+
+    border-left: 1px solid black;
+
+}
+
+.container-item {
+    height: 100vh;
+    width: 25%;
+
+}
+
+.house-header {
+    font-style: bold;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    margin-top: 50px;
+    font-size: clamp(calc(10px + 2.5vw + 3.5vh), calc(15px + 3vw + 3vh), calc(25px + 5.5vw + 5.5vh));
+    transition: all 10s;
+}
+
+.score {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    font-style: bold;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    margin-top: 50px;
+    font-size: clamp(calc(20px + 3vw + 4vh), calc(30px + 5vw + 5vh), calc(35px + 6vw + 6vh));
+    transition: all 1s;
+    z-index: 2000;
+    transform: scale(1, 2);
+}
+
+.start-button-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-button {
+    display: none;
+    z-index: 20;
+    width: 500px;
+    height: 500px;
+    border-radius: 0;
+    cursor: pointer;
+    /* background: content-box radial-gradient(crimson, rgb(29, 92, 0)); */
+    background-color: #B81D13;
+    border: none;
+    color: white;
+    font-size: clamp(100px, 120px, 140px);
+    transition: linear 1s all;
+    filter: drop-shadow(5px 5px 5px black);
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+.start-button:hover {
+
+    transition: linear 1s all;
+    border-radius: 50%;
+    filter: drop-shadow(0px 0px 30px rgb(0, 0, 0));
+    transform: scale(1.5);
+    background-color: #005231;
+    overflow: hidden;
+}
+
+.sabre {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+    filter: drop-shadow(0px 0px 20px black)
+}
+
+
+.container {
+    display: absolute;
+    width: 100vw;
+    height: 100vh
+}
+
+.confetti {
+    position: absolute;
+    font-size: 5vw;
+    user-select: none;
+    z-index: 0
+}
+
+.container-item>* {
+    z-index: 10;
+}
