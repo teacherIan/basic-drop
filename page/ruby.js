@@ -149,7 +149,7 @@ function create() {
         clearInterval(interval);
         setTimeout(() => {
           clearInterval(scaleInterval);
-        }, 10000);
+        }, settings.scaleIntervalValue);
 
         setTimeout(() => {
           circleArray.forEach((circle) => {

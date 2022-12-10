@@ -1,7 +1,6 @@
 import './gameStyle.css';
 import * as Phaser from 'phaser';
 import settings from './settings.js';
-
 import music from '../assets/alexander-nakarada-superepic.mp3';
 const container = document.querySelector('.game-container');
 const startButton = document.querySelector('.start-button');

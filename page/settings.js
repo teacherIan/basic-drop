@@ -20,4 +20,5 @@ export default {
   sapphireFinished: false,
   pearlFinished: false,
   largeGame: true,
+  scaleIntervalValue: 30000,
 };

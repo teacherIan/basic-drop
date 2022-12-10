@@ -153,7 +153,7 @@ function create() {
 
         setTimeout(() => {
           clearInterval(scaleInterval);
-        }, 10000);
+        }, settings.scaleIntervalValue);
         setTimeout(() => {
           circleArray.forEach((circle) => {
             circle.setStatic(true);
