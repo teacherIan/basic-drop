@@ -80,6 +80,7 @@ html {
     transition: all 1s;
     z-index: 2000;
     transform: scale(1, 2);
+
 }
 
 .start-button-container {

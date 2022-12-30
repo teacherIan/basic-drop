@@ -2,6 +2,7 @@ import './gameStyle.css';
 import * as Phaser from 'phaser';
 import settings from './settings.js';
 import music from '../assets/alexander-nakarada-superepic.mp3';
+import { Experience } from './Experience';
 const container = document.querySelector('.game-container');
 const startButton = document.querySelector('.start-button');
 
@@ -69,10 +70,35 @@ startButton.addEventListener('click', () => {
     container.requestFullscreen();
   }
 
-  import('./pearl.js');
-  import('./amber.js');
-  import('./ruby.js');
-  import('./sapphire.js');
+  //
+  setTimeout(() => {
+    //Amber Experience
+    Experience(
+      document.querySelector('.amberContainer'),
+      'Amber',
+      settings.amberColor,
+      settings.amberMax
+    );
+    Experience(
+      document.querySelector('.pearlContainer'),
+      'Pearl',
+      '#000000',
+      settings.pearlMax
+    );
+    Experience(
+      document.querySelector('.rubyContainer'),
+      'Ruby',
+      settings.rubyColor,
+      settings.rubyMax
+    );
+    Experience(
+      document.querySelector('.sapphireContainer'),
+      'Sapphire',
+      settings.sapphireColor,
+      settings.sapphireMax
+    );
+  }, 300);
+
   startButton.style.cursor = 'default';
   let audio = new Audio(music);
   audio.play();
@@ -106,12 +132,7 @@ confetti.forEach((item, index) => {
 
 function loop() {
   requestAnimationFrame(loop);
-  if (
-    settings.pearlFinished &&
-    settings.rubyFinished &&
-    settings.amberFinished &&
-    settings.sapphireFinished
-  ) {
+  if (settings.gamesFinished == 4) {
     setTimeout(() => {
       confetti = confetti.map((emoji) => {
         emoji.y += 0.7 * emoji.r;
