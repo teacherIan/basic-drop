@@ -147,3 +147,16 @@ html {
 .container-item>* {
     z-index: 10;
 }
+
+.loading {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    font-size: 100px;
+}
+
+.loading-text {
+    display: flex;
+    justify-content: center;
+
+}
