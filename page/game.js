@@ -77,6 +77,7 @@ fetch('https://house-points.onrender.com/get')
 startButton.addEventListener('click', () => {
   if (container.requestFullscreen) {
     container.requestFullscreen();
+    startButton.style.display = 'none';
   }
 
   //
