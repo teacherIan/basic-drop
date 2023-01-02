@@ -49,6 +49,8 @@ export const Experience = (houseContainer, houseText, houseColor, maxValue) => {
       if (divOpacity > 0) {
         divOpacity -= 0.02;
         div.style.opacity = divOpacity;
+      } else {
+        // div.style.display = 'none';
       }
       if (max > 0) {
         let circleOne = this.add.circle(
