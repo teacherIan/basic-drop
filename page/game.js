@@ -60,6 +60,12 @@ if (isChromium) {
           settings.ballSize = 5;
           settings.scaleFactor = 0.02;
         }
+        if (total > 4500) {
+          settings.gameSpeed = 110;
+          settings.ballSize = 4.85;
+          settings.scaleFactor = 0.02;
+        }
+
         if (total > 5000) {
           settings.gameSpeed = 100;
           settings.ballSize = 4.7;
