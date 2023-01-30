@@ -13,7 +13,9 @@ let total = 0;
 
 if (isChromium) {
   console.log('is chromium');
-  fetch('https://add-mongo-db-backend-production.up.railway.app/get')
+  //'https://house-points.onrender.com/get'
+  //https://add-mongo-db-backend-production.up.railway.app/get
+  fetch('https://house-points.onrender.com/get')
     .then((response) => response.json())
     .then(
       (data) => {
