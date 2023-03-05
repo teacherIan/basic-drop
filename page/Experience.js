@@ -15,8 +15,11 @@ export const Experience = (houseContainer, houseText, houseColor, maxValue) => {
       default: 'matter',
       matter: {
         enableSleeping: true,
-        // velocityIterations: 1,
-        // positionIterations: 1,
+        gravity: {
+          y: 2,
+        },
+        // velocityIterations: 6,
+        // positionIterations: 20,
         // constraintIterations: 1,
       },
     },
