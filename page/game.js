@@ -100,18 +100,31 @@ startButton.addEventListener('click', () => {
   //
   setTimeout(() => {
     //Amber Experience
+    const amberContainer = document.querySelector('.amberContainer');
+    amberContainer.style.borderLeft = '.5px solid #e46725';
+    amberContainer.style.borderRight = '.5px solid #e46725';
+
     Experience(
       document.querySelector('.amberContainer'),
       'Amber',
       settings.amberColor,
       settings.amberMax
     );
+
+    const pearlContainer = document.querySelector('.pearlContainer');
+    pearlContainer.style.borderLeft = '.5px solid #000000';
+    pearlContainer.style.borderRight = '.5px solid #000000';
+
     Experience(
       document.querySelector('.pearlContainer'),
       'Pearl',
       '#000000',
       settings.pearlMax
     );
+
+    const rubyContainer = document.querySelector('.rubyContainer');
+
+    rubyContainer.style.borderRight = '.5px solid #c11c22';
     Experience(
       document.querySelector('.rubyContainer'),
       'Ruby',
@@ -124,6 +137,8 @@ startButton.addEventListener('click', () => {
       settings.sapphireColor,
       settings.sapphireMax
     );
+
+    //necessary timeout for game to function correctly
   }, 300);
 
   startButton.style.cursor = 'default';
@@ -133,7 +148,7 @@ startButton.addEventListener('click', () => {
 
 let characters = ['🥳', '🎉', '✨'];
 
-let confetti = new Array(80)
+let confetti = new Array(50)
   .fill()
   .map((_, i) => {
     return {

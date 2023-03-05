@@ -9,7 +9,7 @@ export default {
   bounce: 1,
   friction: 0.5,
   scaleFactor: 0,
-  gameSpeed: 40,
+  gameSpeed: 150,
   rubyColor: 0xc11c22,
   amberColor: 0xe46725,
   sapphireColor: 0x1271b5,
